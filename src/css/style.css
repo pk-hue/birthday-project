@@ -1,0 +1,148 @@
+@media (max-width: 980px) {
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    .header {
+        background-color: #dfd2d2;
+    }
+
+    .header .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6rem 3rem;
+        min-width: 75px;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+
+    }
+
+    .header a:hover h1 {
+        color: coral;
+        transition: 0.3s;
+    }
+
+    .images-slider{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .images-slider:after{
+        content: url('../imgs/seta_preta.png');
+        height: 35px;
+        left: 400px;
+        bottom: 40px;
+        position: absolute;
+        animation: downarrow 0.6s infinite alternate ease-in-out;
+    }
+
+    @-webkit-keyframes downarrow {
+        0% { -webkit-transform: translatey(0); opacity: 0.1;}
+        100% { -webkit-transform: translatey(0.5em); opacity: 0.9;}
+    }
+    
+    .images-slider .slide{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s ease-out;
+        display: flex;
+        align-items: center;
+    }
+    
+    .images-slider .slide.mostrar{
+        opacity: 1;
+    }
+    
+    .slide-rosa{
+        background-image: url(../imgs/flores-de-sakura.jpg);
+    }
+    
+    .slide-amarelo{
+        background-image: url(../imgs/flores-amarelas.jpg);
+    }
+    
+    .slide-laranja{
+        background-image: url(../imgs/por-do-sol.jpg);
+    }
+    
+    .slide-azul{
+        background-image: url(../imgs/montanhas-com-neve.jpg);
+    }
+    
+    .seta-voltar, .seta-avancar{
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .seta-voltar{
+        left: 4%;
+        transform: rotateY(180deg);
+    }
+    
+    .seta-avancar{
+        right: 4%;
+    }
+    
+    .seta-voltar .imagem-seta, .seta-avancar .imagem-seta{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .opacidade{
+        opacity: 0.6;
+        cursor: default;
+    }
+    .conteudo{
+        background-color: #fffdfd;
+        margin-left: 180px;
+        width: 510px;
+        padding: 65px 60px;
+        border-radius: 10px;
+    }
+    
+    .conteudo .titulo{
+        font-weight: 400;
+        font-size: 4rem;
+        margin-bottom: 70px;
+    }
+    
+    .conteudo .texto{
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    .conteudo .botao{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .botao.rosa{
+        color: #eb1cb7;
+    }
+    .botao amarelo{
+        color: #b1ce10;
+    }
+    .botao.laranja{
+        color: #eb5e1c;
+    }
+    .botao.azul{
+        color: #0f0cd3;
+    }
+}
