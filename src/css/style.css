@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap');
+
+
 @media (max-width: 980px) {
     html {
         font-size: 62.5%;
@@ -8,6 +11,10 @@
         font-size: 1.6rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
+        font-family: 'PT Serif', serif;
+        background-color: #FF3CAC;
+        background-image: linear-gradient(24deg, #FF3CAC 0%, #784BA0 50%, #9e2bc5 100%);
+
     }
 
     .header {
@@ -43,7 +50,7 @@
     .images-slider:after{
         content: url('../imgs/seta_preta.png');
         height: 35px;
-        left: 400px;
+        left: 45vw;
         bottom: 40px;
         position: absolute;
         animation: downarrow 0.6s infinite alternate ease-in-out;
@@ -145,4 +152,80 @@
     .botao.azul{
         color: #0f0cd3;
     }
+
+    .section{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 6rem;
+    }
+
+    .card {
+        width: 400px;
+        height: 300px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px #ffffff80;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      
+      .card svg {
+        width: 48px;
+        fill: #333;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+      }
+      
+      .card__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      
+      .card:hover .card__content {
+        transform: rotateX(0deg);
+      }
+      
+      .card__title {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+      }
+      
+      .card:hover svg {
+        scale: 0;
+      }
+      
+      .card__description {
+        margin: 10px 0 0;
+        font-size: 14px;
+        color: #777;
+        line-height: 1.4;
+      }
+      
 }
