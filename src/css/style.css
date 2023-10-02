@@ -25,12 +25,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.6rem 3rem;
+        padding: 2.3rem 3rem;
         min-width: 75px;
     }
 
     .header h1 {
-        font-size: 3rem;
+        font-size: 1.9rem;
         font-weight: 700;
 
     }
@@ -116,41 +116,6 @@
     .opacidade{
         opacity: 0.6;
         cursor: default;
-    }
-    .conteudo{
-        background-color: #fffdfd;
-        margin-left: 180px;
-        width: 510px;
-        padding: 65px 60px;
-        border-radius: 10px;
-    }
-    
-    .conteudo .titulo{
-        font-weight: 400;
-        font-size: 4rem;
-        margin-bottom: 70px;
-    }
-    
-    .conteudo .texto{
-        font-weight: 300;
-        font-size: 2rem;
-        margin-bottom: 50px;
-    }
-    .conteudo .botao{
-        font-weight: 700;
-        font-size: 2rem;
-    }
-    .botao.rosa{
-        color: #eb1cb7;
-    }
-    .botao amarelo{
-        color: #b1ce10;
-    }
-    .botao.laranja{
-        color: #eb5e1c;
-    }
-    .botao.azul{
-        color: #0f0cd3;
     }
 
     .section{

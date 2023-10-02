@@ -74,6 +74,7 @@
     .header .menu {
         display: block;
         align-self: flex-end;
+        margin-bottom: 5px;
     }
 
     .header nav label {
