@@ -18,7 +18,7 @@
     }
 
     .header {
-        background-color: #dfd2d2;
+        background-color: var(--color-header);
     }
 
     .header .header-container {
@@ -36,7 +36,7 @@
     }
 
     .header a:hover h1 {
-        color: coral;
+        color: var(--color-hover);
         transition: 0.3s;
     }
 
