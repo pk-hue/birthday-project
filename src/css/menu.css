@@ -11,7 +11,7 @@
 }
 
 .header nav ul li a:hover {
-    color: #fff;
+    color: #54035c;
     background-color: var(--color-hover);
     transition: 0.4s;
 }
@@ -75,6 +75,7 @@
         display: block;
         align-self: flex-end;
         margin-bottom: 5px;
+        
     }
 
     .header nav label {

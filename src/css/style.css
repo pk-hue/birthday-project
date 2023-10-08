@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Young+Serif&display=swap');
 
 
 @media (max-width: 980px) {
@@ -9,9 +9,8 @@
 
     body {
         font-size: 1.6rem;
-        font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-family: 'PT Serif', serif;
+        font-family: 'Young Serif', serif;
         background-color: #FF3CAC;
         background-image: linear-gradient(24deg, #FF3CAC 0%, #784BA0 50%, #9e2bc5 100%);
 
@@ -120,7 +119,13 @@
 
     .section{
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Young Serif', serif;
+    }
+
+    .section p{
+        font-size: 16px;
     }
 
     .cards{
