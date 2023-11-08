@@ -198,4 +198,83 @@
         line-height: 1.4;
       }
       
+      .palette {
+        display: flex;
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+      
+      .color {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+      }
+      
+      .color span {
+        opacity: 0;
+        transition: opacity 0.1s linear;
+      }
+      
+      .color:nth-child(1) {
+        margin-left: 30px;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+        background-image: url(../imgs/imgs-capadocia/capadocia-1.jpg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+      }
+      
+      .color:nth-child(2) {
+        background-image: url(../imgs/imgs-capadocia/capadocia-2.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .color:nth-child(3) {
+        background-image: url(../imgs/imgs-capadocia/capadocia-3.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .color:nth-child(4) {
+        background-image: url(../imgs/imgs-capadocia/capadocia-4.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .color:nth-child(5) {
+        margin-right: 30px;
+        border-radius: 0px 10px 10px 0px;
+        background-image: url(../imgs/imgs-capadocia/capadocia-5.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .color:hover {
+        flex: 2;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      
+      .color:hover span {
+        opacity: 1;
+      }
+
+      .musica{
+        display: flex;
+        justify-content: center;
+      }
+
+      .musica audio{
+        background-color: #f8f6f6;
+        border-radius: 8px;
+      }
 }
